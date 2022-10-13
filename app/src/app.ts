@@ -11,3 +11,12 @@ if (form) {
 } else {
     throw Error("Não foi possivel inicializar a aplicacao. Verifique se o valor é nulo");
 };
+
+const botaoImporta = document.querySelector('#botao-importa')
+if (botaoImporta) {
+    botaoImporta.addEventListener('click', () => {
+        controller.importaDados();
+    })
+} else {
+    throw Error('Botao importa nao foi encontrado')
+}
